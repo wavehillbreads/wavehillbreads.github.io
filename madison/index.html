@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="WHB Markets">
-<title>Wave Hill Breads — Madison 051526 Test 2</title>
+<title>Wave Hill Breads — Madison 051526</title>
 <style>
 :root{--g:#1D9E75;--gl:#EAF3DE;--gd:#27500A;--gm:#085041;--r:#A32D2D;--rl:#FCEBEB;--a:#633806;--al:#FAEEDA;--ab:#EF9F27;--t:#1a1a1a;--tm:#666;--b:rgba(0,0,0,0.12);--bs:rgba(0,0,0,0.22);--bg:#f5f5f0;--s:#fff;--s2:#f0efea;--rad:10px;--radl:14px}
 @media(prefers-color-scheme:dark){:root{--t:#f0f0f0;--tm:#aaa;--b:rgba(255,255,255,0.12);--bs:rgba(255,255,255,0.22);--bg:#1a1a1a;--s:#252525;--s2:#2e2e2e;--gl:#0a2a1a;--gd:#9FE1CB;--rl:#2a0a0a;--al:#2a1a00}}
@@ -71,7 +71,7 @@ html,body{height:100%;background:var(--bg);font-family:-apple-system,BlinkMacSys
   <div class="hh"><div class="logo">Wave Hill Breads</div><div class="tag">Market day tracker</div></div>
   <div style="padding:0 16px 8px;font-size:11px;font-weight:600;color:var(--tm);text-transform:uppercase;letter-spacing:.06em">Today’s market</div>
   <div class="mc" onclick="startMarket()">
-    <div class="mn">Madison 051526 Test 2 Farmers Market</div>
+    <div class="mn">Madison 051526 Farmers Market</div>
     <div class="mm">Terrell · 41 items · $1,940</div>
     <span class="mp" id="hs">Not started</span>
   </div>
@@ -81,7 +81,7 @@ html,body{height:100%;background:var(--bg);font-family:-apple-system,BlinkMacSys
 <div id="sm" class="screen">
   <div class="topbar">
     <button class="back" onclick="goHome()">← Home</button>
-    <div style="flex:1"><div class="title">Madison 051526 Test 2</div></div>
+    <div style="flex:1"><div class="title">Madison 051526</div></div>
     <div style="font-size:12px;color:var(--tm)" id="pl">0 / 41</div>
   </div>
   <div class="steps">
@@ -95,14 +95,14 @@ html,body{height:100%;background:var(--bg);font-family:-apple-system,BlinkMacSys
   <div class="dw">
     <div class="di"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#27500A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
     <div class="dt">Day complete!</div>
-    <div class="ds2">Madison 051526 Test 2 · </div>
+    <div class="ds2">Madison 051526 · </div>
     <div class="dsm" id="dsm"></div>
     <button class="btn btns" onclick="goHome()">Back to home</button>
   </div>
 </div>
 <script>
 const PRODUCTS=[{"code":"Brioche Loaf","name":"Brioche Loaf (Unsliced)","qty":1,"price":14,"pizza":false},{"code":"Braided Challah Loaf","name":"Braided Challah Loaf (Long)","qty":3,"price":8,"pizza":false},{"code":"Cookie Choc Chip","name":"Cookie Chocolate Chip","qty":20,"price":4,"pizza":false},{"code":"Cookie Oatmeal","name":"Cookies Oatmeal","qty":15,"price":4,"pizza":false},{"code":"Cookie Snicker-do","name":"Cookies Snickerdoodle","qty":6,"price":4,"pizza":false},{"code":"IB Rom Foc Personal","name":"IB Roman Foc Personal Size","qty":8,"price":8,"pizza":false},{"code":"IB Rom Foc Rosemary","name":"IB Roman Focaccia with Rosmary Personal Size","qty":8,"price":8,"pizza":false},{"code":"SEM 20oz","name":"Semolina Batard - 20oz","qty":4,"price":10,"pizza":false},{"code":"WHB MU Pan","name":"Multigrain Pan Loaf (Sliced)","qty":3,"price":10,"pizza":false},{"code":"WHB 10 Demi","name":"Three Grain Demi Baguette (10oz)","qty":6,"price":5,"pizza":false},{"code":"WHB 20","name":"ThreeGrain Country batard  (20oz)","qty":3,"price":10,"pizza":false},{"code":"WHB 24 Baquette","name":"ThreeGrain Full Baguette 24 inch","qty":8,"price":6,"pizza":false},{"code":"WHB Cia","name":"ThreeGrain Ciabatta Roasted Red Pepper and Olive","qty":7,"price":10,"pizza":false},{"code":"WHB Cranberry Wal","name":"ThreeGrain Cranberry Walnut Demi","qty":3,"price":7,"pizza":false},{"code":"WHB Epi Med.","name":"ThreeGrain Medium Epi (16 oz)","qty":3,"price":10,"pizza":false},{"code":"WHB Garlic 20oz","name":"ThreeGrain Garlic  (20oz)","qty":4,"price":12,"pizza":false},{"code":"WHB Half Mega (Sli)","name":"Three Grain Half  Mega (Sliced)","qty":1,"price":10,"pizza":false},{"code":"WHB Three-Cheese","name":"Three-Cheese Demi-Baguette (10oz)","qty":2,"price":7,"pizza":false},{"code":"Pan Cin Buttermilk","name":"Buttermilk Cinnamon Raisin Pan Loaf (Unsliced)","qty":1,"price":12,"pizza":false},{"code":"PAN HWW Sli","name":"Honey Whole Wheat Loaf  (Sliced)","qty":2,"price":10,"pizza":false},{"code":"Pan White (sl)","name":"Buttermilk Honey White Sandwich Loaf (Sliced)","qty":2,"price":10,"pizza":false},{"code":"Pan Wild (Sliced)","name":"Wild Yeast Sourdough Pan Loaf (Sliced)","qty":15,"price":10,"pizza":false},{"code":"PC","name":"Croissant Plain","qty":20,"price":5,"pizza":false},{"code":"PC 2x Almond","name":"PC 2x Baked Almond Croissant","qty":10,"price":6.5,"pizza":false},{"code":"PC Apple Turnonver","name":"Apple Turnover","qty":4,"price":6,"pizza":false},{"code":"PC CH","name":"Croissant Chocolate","qty":25,"price":6,"pizza":false},{"code":"PC Monkey Bread","name":"Monkey Bread","qty":30,"price":7,"pizza":false},{"code":"PC Monkey Cheese","name":"Three-Cheese Monkey Breads","qty":20,"price":7,"pizza":false},{"code":"PM Berry","name":"Berry Muffin","qty":1,"price":4,"pizza":false},{"code":"PS Vanilla","name":"Vanilla Scone","qty":6,"price":4,"pizza":false},{"code":"Pizza M","name":"Margherita Pizza","qty":8,"price":15,"pizza":true},{"code":"Pizza mini","name":"Mini Pizzettes","qty":3,"price":5,"pizza":false},{"code":"Pizza S","name":"Sausage Pizza","qty":3,"price":18,"pizza":true},{"code":"Pizza V","name":"Veggie Pizza","qty":3,"price":18,"pizza":true},{"code":"Pizza Z","name":"Zucchini Pizza","qty":3,"price":18,"pizza":true},{"code":"Miche","name":"Sourdough Miche - Quarter (Unsliced)","qty":8,"price":8,"pizza":false},{"code":"Miche - Quarter(Slic","name":"Wild Yeast Sourdough Miche -  Quarter (Sliced)","qty":15,"price":10,"pizza":false},{"code":"Wild 24’’ Bag","name":"Wild  Yeast Sourdough Baguette","qty":3,"price":7,"pizza":false},{"code":"Wild Boule","name":"Wild  Yeast Sourdough Boule (16oz)","qty":2,"price":7,"pizza":false},{"code":"Wild Kalamata","name":"Wild Yeast Kalamata Boule","qty":3,"price":12,"pizza":false},{"code":"Wild Yeast Loaf","name":"Wild  Yeast Sourdough Batard","qty":6,"price":10,"pizza":false}];
-const MARKET_NAME="Madison 051526 Test 2";
+const MARKET_NAME="Madison 051526";
 const MARKET_DATE="";
 const MARKET_REPS="Terrell";
 const MARKET_TARGET=1940;
